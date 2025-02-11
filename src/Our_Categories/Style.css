@@ -1,0 +1,28 @@
+.cards{
+    border-radius: 50%;
+}
+
+  
+.category-card {
+    width: 100%; /* Ensure cards take up the full available width */
+    height: 250px; /* Fixed height for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* For rounded corners */
+    overflow: hidden;
+  }
+  
+  .category-img {
+    width: 100px; /* Set a fixed width for images */
+    height: 100px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure the image doesn't stretch but fills the container */
+    border-radius: 50%; /* If you want round images */
+  }
+  
+  .cards {
+    border-radius: 15px; /* Apply border radius for the card */
+    overflow: hidden;
+  }
+  
