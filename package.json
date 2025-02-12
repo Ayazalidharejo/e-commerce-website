@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@iconify-icons/fa-solid": "^1.2.4",
     "@iconify/react": "^5.2.0",
+    "@mui/icons-material": "^6.4.4",
+    "@mui/material": "^6.4.4",
     "@reduxjs/toolkit": "^2.5.1",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
@@ -13,6 +17,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.16.0",
     "swiper": "^11.2.2",
     "web-vitals": "^4.2.4"
   },

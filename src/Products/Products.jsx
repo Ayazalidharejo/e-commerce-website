@@ -3,6 +3,8 @@ import babycream from "../images/baby-cream.jpg"
 import bottle from "../images/bottle.png"
 import cream from "../images/cream.png"
 import fan from "../images/fan.jpg"
+import { useDispatch } from "react-redux";
+import { addProduct } from "../Slice/Addtocart";
 
 const products = [
   { id: 1, name: "TREL Mini Handheld Stroller Fan", category: "Baby Products", price: 29.99, image: fan },
@@ -40,6 +42,8 @@ const products = [
 const uniqueCategories = ["All", ...new Set(products.map(p => p.category))];
 
 const ProductGrid = () => {
+const dispach =useDispatch()
+
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProducts = selectedCategory === "All" 
@@ -65,13 +69,19 @@ const ProductGrid = () => {
       <div className="row">
         {filteredProducts.map(product => (
           <div key={product.id} className="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div className="card shadow-sm border-0">
+            <div  className="card shadow-sm border-0">
               <img src={product.image} alt={product.name} className="card-img-top p-3" />
               <div className="card-body text-center">
                 <h6 className="card-title">{product.name}</h6>
                 <p className="text-muted">{product.category}</p>
                 <h5 className="text-danger">${product.price.toFixed(2)}</h5>
-                <button className="btn btn-danger w-100">ADD TO CART</button>
+                <button
+  onClick={() => dispach(addProduct(product))}
+  className="btn btn-danger w-100"
+>
+  ADD TO CART
+</button>
+
               </div>
             </div>
           </div>

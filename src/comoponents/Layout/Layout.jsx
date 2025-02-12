@@ -8,8 +8,22 @@ import shoppingCartIcon from '@iconify-icons/fa-solid/shopping-cart';  // Shoppi
 import { Link, Outlet } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import image from "../../images/bootlee.png"
+import { Drawer } from "@mui/material";
+import MyDrawer from "../../Sidebar/Drawer";
+import { useSelector } from "react-redux";
 
 const NavigationBar = () => {
+ 
+ 
+  const items = useSelector((state) => state.products.items);
+
+  
+  const [open, setOpen] = React.useState(false);
+
+    
+   const toggleDrawer = (state) => {
+     setOpen(state);
+   };
   return (
     <>
    
@@ -72,9 +86,10 @@ const NavigationBar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link d-flex align-items-center" href="#">
-                  <Icon icon={shoppingCartIcon} width={20} />
-                  <span className="badge bg-danger ms-1">0</span>
-                  <span className="ms-2">$0.00</span>
+                  <Icon  onClick={ toggleDrawer} icon={shoppingCartIcon} width={20} />
+                  <span className="badge bg-danger ms-1">{items.length}</span>
+
+                  <span className="ms-2">${0.00}</span>
                 </a>
               </li>
             </ul>
@@ -105,6 +120,8 @@ const NavigationBar = () => {
           </ul>
         </div>
       </div>
+    
+      <MyDrawer open={open} toggleDrawer={toggleDrawer}/>
       <Outlet/>
     </>
   );
