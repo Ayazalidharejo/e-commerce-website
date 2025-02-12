@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <>
       {/* Header Section */}
-      <div className="bg-primary text-white text-center py-5">
+      <div className="bg-danger text-white text-center py-5">
         <h1>Contact Us</h1>
         <p>HOME / Contact US</p>
       </div>

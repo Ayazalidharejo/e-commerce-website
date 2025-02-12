@@ -1,18 +1,5 @@
-.cards{
-    border-radius: 50%;
-}
 
-  
-.category-card {
-    width: 100%; /* Ensure cards take up the full available width */
-    height: 250px; /* Fixed height for uniformity */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px; /* For rounded corners */
-    overflow: hidden;
-  }
+
   
   .category-img {
     width: 100px; /* Set a fixed width for images */
@@ -22,7 +9,7 @@
   }
   
   .cards {
-    border-radius: 15px; /* Apply border radius for the card */
+    border-radius: 50%; /* Apply border radius for the card */
     overflow: hidden;
   }
   

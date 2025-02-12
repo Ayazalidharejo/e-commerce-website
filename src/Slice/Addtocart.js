@@ -1,10 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 import Swal from 'sweetalert2';
 
+
 const initialState = {
   name: 'products',
-  items: [],
   cartToastMessage: '',
+  items: [],
+
 };
 
 export const productSlice = createSlice({
@@ -16,22 +18,29 @@ export const productSlice = createSlice({
 console.log(action);
 
       if (isExit) {
-        state.cartToastMessage = 'Product already added to cart!';
+        state.cartToastMessage = 'Product Already Added!';
+          Swal.fire({
+       title: 'Product Already Added!',
+     
+       icon: 'success',
+       confirmButtonText: 'OK',
+       confirmButtonColor: '#ec008c' 
+     });
       } else {
-        // Adding price with a fixed value of 450
+    
         state.items.push({ 
           ...action.payload, 
           quantity: 1, 
-          price: 450 // Fixed price for all products
+        
         });
-    //     state.cartToastMessage = 'Product added to cart successfully!';
-    //       Swal.fire({
-    //    title: 'success!',
-     
-    //    icon: 'success',
-    //    confirmButtonText: 'OK',
-    //    confirmButtonColor: '#ec008c' 
-    //  });
+        state.cartToastMessage = 'Product added to cart successfully!';
+        Swal.fire({
+     title: 'Product added to cart successfully!',
+   
+     icon: 'success',
+     confirmButtonText: 'OK',
+     confirmButtonColor: '#ec008c' 
+   });
       }
     },
 

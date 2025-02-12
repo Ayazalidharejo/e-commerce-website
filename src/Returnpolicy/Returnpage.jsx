@@ -9,7 +9,7 @@ const ReturnPolicy = () => {
     
    
     <div className="container-fluid p-0">
-      <div className="bg-primary text-white text-center py-5">
+      <div className="bg-danger text-white text-center py-5">
         <h1>Return Policy</h1>
         <p>HOME / RETURN POLICY</p>
       </div>

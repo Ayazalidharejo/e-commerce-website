@@ -11,7 +11,7 @@ const AboutUs = () => {
    
     <div className="container-fluid p-0">
       {/* Header Section */}
-      <div className="bg-primary text-white text-center py-5">
+      <div className="bg-danger text-white text-center py-5">
         <h1>About us</h1>
         <p>HOME / ABOUT US</p>
       </div>

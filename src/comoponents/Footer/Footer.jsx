@@ -4,14 +4,14 @@ import ft from "../../images/ft.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-danger text-white py-4 mt-5">
+    <footer className="bg-warning text-white py-4 mt-5">
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <h5 className="mb-3">Dhir Crick</h5>
+            <h5 className="mb-3">Mr Bean</h5>
             <p>Business Address: 2200 W BAKER RD APT 312 BAYTOWN TX 77521</p>
             <p>Phone Number: +1 (361) 522-1768</p>
-            <p>Email: info@dhircrickllc.com</p>
+            <p>Email: info@mrbean.com</p>
           </div>
           <div className="col-md-2">
             <h5 className="mb-3">Quick Links</h5>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         <hr className="bg-light" />
         <div className="d-flex justify-content-between align-items-center">
-          <p className="mb-0">&copy; Dhir Crick LLC 2024 All Rights Reserved.</p>
+          <p className="mb-0">&copy; MR bean LLC 2024 All Rights Reserved.</p>
           <div>
             <img src={ft} alt="Visa" width="240" className="me-2" />
             {/* <img src="mastercard.png" alt="Mastercard" width="40" className="me-2" />

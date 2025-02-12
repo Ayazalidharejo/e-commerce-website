@@ -6,6 +6,7 @@ import Fashioncards from '../Fashioncards/Fashioncards'
 import FoodSection from '../FoodSection/FoodSection'
 import Items from '../Kichten_item/Items'
 import CategorySection from '../Our_Categories/Our_Categories'
+import CustomerReviews from '../comoponents/Custumer_review/Review'
 
 const Mainepage = () => {
   return (
@@ -16,6 +17,7 @@ const Mainepage = () => {
       <CategorySection/>
       <Items/>
       <FoodSection/>
+      <CustomerReviews/>
       <Footer/>  
     </div>
   )

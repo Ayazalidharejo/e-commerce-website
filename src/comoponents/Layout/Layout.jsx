@@ -7,15 +7,17 @@ import exchangeAltIcon from '@iconify-icons/fa-solid/exchange-alt';  // Exchange
 import shoppingCartIcon from '@iconify-icons/fa-solid/shopping-cart';  // Shopping Cart icon
 import { Link, Outlet } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import image from "../../images/bootlee.png"
+import image from "../../images/logo.png"
 import { Drawer } from "@mui/material";
 import MyDrawer from "../../Sidebar/Drawer";
 import { useSelector } from "react-redux";
+import FilterComponent from "../../FilterComponent";
 
 const NavigationBar = () => {
  
  
   const items = useSelector((state) => state.products.items);
+  const totalPrice = items.reduce((total, item) => total + (item.price * item.quantity), 0);
 
   
   const [open, setOpen] = React.useState(false);
@@ -27,7 +29,7 @@ const NavigationBar = () => {
   return (
     <>
    
-   <div className="bg-danger text-white text-center py-2">
+   <div className="bg-warning text-white text-center py-2">
    <div className="container ">
     <div className="d-flex justify-content-between">
      <div >
@@ -48,9 +50,16 @@ const NavigationBar = () => {
    </div>
       <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div className="container">
-          <a className="navbar-brand" href="#">
-            <img style={{width:"80px",height:"50px"}} src={image} alt="Dhir Crick" width="120" />
-          </a>
+       <div>
+
+        
+       <Link className="text-decoration-none" to="">
+           <img style={{width:"70px",height:"50px"}} src={image} alt="Dhir Crick" width="120" />
+           <span className="fw-bold" > NYIYI346.com</span>
+           </Link>
+         
+       </div>
+         
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -67,7 +76,7 @@ const NavigationBar = () => {
                   <li><a className="dropdown-item" href="#">Baby Products</a></li>
                 </ul>
               </div>
-              <button className="btn btn-danger ms-2" type="button">
+              <button className="btn btn-warning ms-2" type="button">
               <Icon icon="fluent:search-24-regular" />
               </button>
             </form>
@@ -75,8 +84,8 @@ const NavigationBar = () => {
             {/* <Link className="text-decoration-none text-black" to="/About">    <li className="mx-3">About US</li> </Link>
             <Link className="text-decoration-none text-black " to="/Contact">   <li>Contact US</li> </Link>
             <Link className="text-decoration-none text-black" to="/ReturnPolicy"> <li>Retrurn Policy</li> </Link> */}
-              <li className="nav-item">
-                <a className="nav-link" href="#"><Icon icon={userIcon} width={20} /></a>
+              <li className="">
+              <Link className="text-decoration-none  " to="/Signup">  <Icon className="text-secondary"  icon={userIcon} width={20} /> </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#"><Icon icon={heartIcon} width={20} /></a>
@@ -87,9 +96,9 @@ const NavigationBar = () => {
               <li className="nav-item">
                 <a className="nav-link d-flex align-items-center" href="#">
                   <Icon  onClick={ toggleDrawer} icon={shoppingCartIcon} width={20} />
-                  <span className="badge bg-danger ms-1">{items.length}</span>
+                  <span className="badge bg-warning ms-1">{items.length}</span>
 
-                  <span className="ms-2">${0.00}</span>
+                  <span className="ms-2">${totalPrice}</span>
                 </a>
               </li>
             </ul>
@@ -99,30 +108,35 @@ const NavigationBar = () => {
       <div className="bg-light py-2">
         <div className="container">
           <ul className="nav justify-content-center">
-            <li className="nav-item">
-              <a className="nav-link" href="#">HOME & KITCHEN</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">TOYS & GAMES</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">BABY PRODUCTS</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">BEAUTY PRODUCTS</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">PET SUPPLIES</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">OFFICE PRODUCTS</a>
-            </li>
+          <Link to="/Kichenmaine" className="text-decoration-none">   <li className="nav-item">
+            HOME & KITCHEN
+            </li> </Link>
+
+          <Link to="/Tyand_gamesmaine" className="text-decoration-none mx-3">   <li className="nav-item">
+             TOYS & GAMES
+            </li></Link>
+
+           <Link to="/Babyproductmaine" className="text-decoration-none"> <li className="nav-item">
+             BABY PRODUCTS
+            </li> </Link>
+           <Link to="/Beautyproductmaine" className="text-decoration-none mx-3">  <li className="nav-item">
+              BEAUTY PRODUCTS
+            </li></Link>
+
+          <Link to="/Suplincemaine" className="text-decoration-none">   <li className="nav-item">
+            PET SUPPLIES
+            </li> </Link>
+           <Link to="/OfficeProductmaine" className="text-decoration-none mx-3"> <li className="nav-item">
+            OFFICE PRODUCTS
+            </li> </Link>
           </ul>
         </div>
       </div>
     
       <MyDrawer open={open} toggleDrawer={toggleDrawer}/>
+      
       <Outlet/>
+      
     </>
   );
 };

@@ -1,7 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Style.css"; // Custom CSS file
-import Cream from "../images/cream.png"
+import Cream from "../images/eight.avif"
+import Cream2 from "../images/bag5.avif"
+import Cream3 from "../images/saven.jpg"
+import Cream4 from "../images/nine.avif"
 
 const categories = [
   {
@@ -11,17 +14,17 @@ const categories = [
   },
   {
     title: "Baby PRODUCTS",
-    image: Cream,
+    image: Cream2,
   },
   {
     title: "HEALTH & BEAUTY",
     subtitle: "Skincare for all skin types.",
-    image:Cream,
+    image:Cream3,
   },
   {
     title: "Lawn, Patio & GARDEN",
     button: "SHOP NOW",
-    image: Cream,
+    image: Cream4,
   },
 ];
 
