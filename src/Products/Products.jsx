@@ -23,7 +23,7 @@ const products = [
   { id: 4, name: "Matys Multipurpose Baby Ointment", category: "Baby Products", price: 14.99, image: babycream },
   { id: 5, name: "Baby Diaper Rash Cream", category: "Baby Products", price: 10.99, image: botle },
   { id: 6, name: "Dog Chew Toy", category: "Pet Supplies", price: 8.99, image: botle2 },
-  { id: 7, name: "Fish Oil Omega-3", category: "Supplements", price: 25.99, image: botle3 },
+  { id: 7, name: "Fitness Tracker", category: "Supplements", price: 25.99, image: botle3 },
   { id: 8, name: "Protein Powder", category: "Supplements", price: 49.99, image: babycream },
   { id: 9, name: "Dog Shampoo", category: "Pet Supplies", price: 12.99, image: fan },
   { id: 10, name: "Vitamins for Kids", category: "Supplements", price: 18.99, image: sampo },
