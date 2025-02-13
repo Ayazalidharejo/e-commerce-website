@@ -5,7 +5,7 @@ import image from "../images/dogfood.png"
 const FoodSection = () => {
   return (
     <>
-    <h3 className="text-center mt-5">DISCOUNTED PRODUCTS</h3>
+    {/* <h3 className="text-center mt-5">DISCOUNTED PRODUCTS</h3> */}
    
     <div className="container-fluid py-5">
       <div className="row align-items-center bg-warning text-dark px-4 py-5">
@@ -18,7 +18,7 @@ const FoodSection = () => {
           <img src={image} alt="Pet Food" className="img-fluid" />
         </div>
       </div>
-      
+      <h3 className="text-center mt-5">DISCOUNTED PRODUCTS</h3>
     </div>
     </>
   );

@@ -351,10 +351,24 @@ const NavigationBar = () => {
           <div className="d-flex align-items-center mb-3">
             <Link className="text-decoration-none" to="">
               <img style={{ width: "70px", height: "50px" }} src={image} alt="Dhir Crick" />
-              <span className="fw-bold">NYIYI346.com</span>
+              <span className="fw-bold text-black">N-YIYI 346,LLC</span>
             </Link>
+           
           </div>
-
+         <div> <ul className="navbar-na ms-auto d-flex align-items-center list-unstyled ">
+              <li className="nav-item mx-2 ">
+                <Link className="text-decoration-none" to="/Signup"><Icon className="text-black" icon={userIcon} width={20} /></Link>
+              </li>
+              <li className="nav-item mx-2"><a href="#"><Icon  className="text-black" icon={heartIcon} width={20} /></a></li>
+              <li className="nav-item mx-2"><a href="#"><Icon  className="text-black" icon={exchangeAltIcon} width={20} /></a></li>
+              <li className="nav-item">
+                <a href="#" className="d-flex align-items-center">
+                  <Icon  className="text-black" onClick={toggleDrawere} icon={shoppingCartIcon} width={20} />
+                  <span className="badge bg-warning ms-1">{items.length}</span>
+                  <span className="ms-2 text-black">${totalPrice}</span>
+                </a>
+              </li>
+            </ul></div>
           {/* Search and Category Dropdown (for mobile xs screens inside sidebar) */}
           <div className="search-category my-3">
             <input className="form-control" type="search" placeholder="Search for products" aria-label="Search" />
@@ -374,7 +388,7 @@ const NavigationBar = () => {
           <div className="categories text-center">
             <ul className="list-unstyled">
               <li><Link to="/Kichenmaine" className="text-decoration-none fw-bold">Home & Kitchen</Link></li>
-              <li className="my-2"><Link to="/Tyand_gamesmaine " className="text-decoration-none fw-bold ">Toys & Games</Link></li>
+              <li className="my-2"><Link to="/Tyand_gamesmaine" className="text-decoration-none fw-bold ">Toys & Games</Link></li>
               <li><Link to="/Babyproductmaine" className="text-decoration-none fw-bold">Baby Products</Link></li>
               <li className="my-2"><Link to="/Beautyproductmaine" className="text-decoration-none fw-bold">Beauty Products</Link></li>
               <li><Link to="/Suplincemaine" className="text-decoration-none fw-bold">Pet Supplies</Link></li>
@@ -409,7 +423,7 @@ const NavigationBar = () => {
           <div>
             <Link className="text-decoration-none" to="">
               <img style={{ width: "70px", height: "50px" }} src={image} alt="Logo" />
-              <span className="fw-bold">NYIYI346.com</span>
+              <span className="fw-bold mx-1 text-black">N-YIYI 346,LLC</span>
             </Link>
           </div>
 
@@ -436,15 +450,15 @@ const NavigationBar = () => {
             {/* Navbar Links */}
             <ul className="navbar-nav ms-auto d-flex align-items-center">
               <li className="nav-item mx-2">
-                <Link className="text-decoration-none" to="/Signup"><Icon icon={userIcon} width={20} /></Link>
+                <Link className="text-decoration-none" to="/Signup"><Icon  className="text-black" icon={userIcon} width={20} /></Link>
               </li>
-              <li className="nav-item mx-2"><a href="#"><Icon icon={heartIcon} width={20} /></a></li>
-              <li className="nav-item mx-2"><a href="#"><Icon icon={exchangeAltIcon} width={20} /></a></li>
+              <li className="nav-item mx-2"><a href="#"><Icon  className="text-black" icon={heartIcon} width={20} /></a></li>
+              <li className="nav-item mx-2"><a href="#"><Icon  className="text-black" icon={exchangeAltIcon} width={20} /></a></li>
               <li className="nav-item">
                 <a href="#" className="d-flex align-items-center">
-                  <Icon onClick={toggleDrawere} icon={shoppingCartIcon} width={20} />
+                  <Icon  className="text-black" onClick={toggleDrawere} icon={shoppingCartIcon} width={20} />
                   <span className="badge bg-warning ms-1">{items.length}</span>
-                  <span className="ms-2">${totalPrice}</span>
+                  <span className="ms-2 text-black">${totalPrice}</span>
                 </a>
               </li>
             </ul>
@@ -456,12 +470,12 @@ const NavigationBar = () => {
       <div className="bg-light py-2">
         <div className="container">
           <ul className="nav justify-content-center d-none d-md-flex">
-            <Link to="/Kichenmaine" className="text-decoration-none"><li className="nav-item">HOME & KITCHEN</li></Link>
-            <Link to="/Tyand_gamesmaine" className="text-decoration-none mx-3"><li className="nav-item">TOYS & GAMES</li></Link>
-            <Link to="/Babyproductmaine" className="text-decoration-none"><li className="nav-item">BABY PRODUCTS</li></Link>
-            <Link to="/Beautyproductmaine" className="text-decoration-none mx-3"><li className="nav-item">BEAUTY PRODUCTS</li></Link>
-            <Link to="/Suplincemaine" className="text-decoration-none"><li className="nav-item">PET SUPPLIES</li></Link>
-            <Link to="/OfficeProductmaine" className="text-decoration-none mx-3"><li className="nav-item">OFFICE PRODUCTS</li></Link>
+            <Link to="/Kichenmaine" className="text-decoration-none text-black fw-semibold"><li className="nav-item">HOME & KITCHEN</li></Link>
+            <Link to="/Tyand_gamesmaine" className="text-decoration-none mx-3 text-black fw-semibold"><li className="nav-item">TOYS & GAMES</li></Link>
+            <Link to="/Babyproductmaine" className="text-decoration-none text-black fw-semibold"><li className="nav-item">BABY PRODUCTS</li></Link>
+            <Link to="/Beautyproductmaine" className="text-decoration-none mx-3 text-black fw-semibold"><li className="nav-item">BEAUTY PRODUCTS</li></Link>
+            <Link to="/Suplincemaine" className="text-decoration-none text-black fw-semibold"><li className="nav-item">PET SUPPLIES</li></Link>
+            <Link to="/OfficeProductmaine" className="text-decoration-none mx-3 text-black fw-semibold "><li className="nav-item">OFFICE PRODUCTS</li></Link>
           </ul>
         </div>
       </div>

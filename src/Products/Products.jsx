@@ -15,6 +15,7 @@ import { useDispatch } from "react-redux";
 import { addProduct } from "../Slice/Addtocart";
 import { ToastContainer, toast } from 'react-toastify';
 import FilterComponent from "../FilterComponent"
+import { Tooltip } from "@mui/material";
 
 const products = [
   { id: 1, name: "TREL Mini Handheld Stroller Fan", category: "Baby Products", price: 29.99, image: fan },
@@ -93,10 +94,13 @@ const dispach =useDispatch()
           className="card-img-top p-3"
         />
         <div className="card-body text-center">
-        <h6 className="card-title">
+       
+
+<Tooltip title={product.name} placement="top-start">
+<h6 className="card-title" >
   {product.name.length > 10 ? product.name.slice(0, 10) + "..." : product.name}
 </h6>
-
+</Tooltip>
           <p className="text-muted">{product.category}</p>
           <h5 className="text-black">${product.price.toFixed(2)}</h5>
           <button

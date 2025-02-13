@@ -15,9 +15,9 @@ const Mainepage = () => {
       <Fashioncards/>
       <ProductGrid/>
       <CategorySection/>
-      <Items/>
+      {/* <Items/>/ */}
       <FoodSection/>
-      <CustomerReviews/>
+      {/* <CustomerReviews/> */}
       <Footer/>  
     </div>
   )
