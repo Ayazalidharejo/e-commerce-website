@@ -317,6 +317,7 @@ import image from "../../images/logo.png";
 import { Drawer } from "@mui/material";
 import { useSelector } from "react-redux";
 import "./style.css";
+import MyDrawer from "../../Sidebar/Drawer";
 
 const NavigationBar = () => {
   const items = useSelector((state) => state.products.items);
@@ -328,6 +329,14 @@ const NavigationBar = () => {
     setOpen(state);
   };
 
+
+
+  const [show, setShow] = React.useState(false);
+
+    
+      const toggleDrawere = (state) => {
+        setShow(state);
+      };
   return (
     <>
       {/* Mobile Sidebar Drawer */}
@@ -379,10 +388,11 @@ const NavigationBar = () => {
       <div className="bg-warning text-white text-center py-2">
         <div className="container">
           <div className="d-flex justify-content-between">
-            <div>
-              <small>GET FREE DELIVERY OVER THE ORDER OF $99</small>
-            </div>
-            <div>
+          <div className="d-none d-md-block">
+  <small>GET FREE DELIVERY OVER THE ORDER OF $99</small>
+</div>
+
+            <div  className="menue">
               <ul className="d-flex list-unstyled">
                 <Link className="text-decoration-none text-white" to="/Contact"><li>Contact US</li></Link>
                 <Link className="text-decoration-none text-white" to="/About"><li className="mx-3">About US</li></Link>
@@ -432,7 +442,7 @@ const NavigationBar = () => {
               <li className="nav-item mx-2"><a href="#"><Icon icon={exchangeAltIcon} width={20} /></a></li>
               <li className="nav-item">
                 <a href="#" className="d-flex align-items-center">
-                  <Icon icon={shoppingCartIcon} width={20} />
+                  <Icon onClick={toggleDrawere} icon={shoppingCartIcon} width={20} />
                   <span className="badge bg-warning ms-1">{items.length}</span>
                   <span className="ms-2">${totalPrice}</span>
                 </a>
@@ -455,7 +465,7 @@ const NavigationBar = () => {
           </ul>
         </div>
       </div>
-
+<MyDrawer show={show} toggleDrawere={toggleDrawere}  />
       {/* Outlet for page content */}
       <Outlet />
     </>

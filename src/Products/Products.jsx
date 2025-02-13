@@ -78,26 +78,39 @@ const dispach =useDispatch()
       </div> */}
       
       <div className="row">
-        {filteredProducts.map(product => (
-          <div key={product.id} className="col-lg-3 col-md-4 col-sm-6 mb-4">
-            <div  className="card shadow-sm border-0 d-flex align-items-center">
-              <img style={{maxWidth:"150px",minWidth:"150px",maxHeight:"140px",minHeight:"140px"}} src={product.image} alt={product.name} className="card-img-top p-3" />
-              <div className="card-body text-center">
-                <h6 className="card-title">{product.name}</h6>
-                <p className="text-muted">{product.category}</p>
-                <h5 className="text-black">${product.price.toFixed(2)}</h5>
-                <button
-  onClick={() => dispach(addProduct(product,toast))}
-  className="btn btn-warning w-100"
->
-  ADD TO CART
-</button>
+  {filteredProducts.map((product) => (
+    <div key={product.id} className="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+      <div className="card shadow-sm border-0 d-flex align-items-center">
+        <img
+          style={{
+            maxWidth: "150px",
+            minWidth: "150px",
+            maxHeight: "140px",
+            minHeight: "140px",
+          }}
+          src={product.image}
+          alt={product.name}
+          className="card-img-top p-3"
+        />
+        <div className="card-body text-center">
+        <h6 className="card-title">
+  {product.name.length > 10 ? product.name.slice(0, 10) + "..." : product.name}
+</h6>
 
-              </div>
-            </div>
-          </div>
-        ))}
+          <p className="text-muted">{product.category}</p>
+          <h5 className="text-black">${product.price.toFixed(2)}</h5>
+          <button
+            onClick={() => dispach(addProduct(product, toast))}
+            className="btn btn-warning w-100"
+          >
+            ADD TO CART
+          </button>
+        </div>
       </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };

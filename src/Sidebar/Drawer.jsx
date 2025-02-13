@@ -22,7 +22,7 @@ function MyDrawer(props) {
   const totalPrice = items.reduce((total, item) => total + (item.price * item.quantity), 0);
   const Dispach =useDispatch()
 
-const {open,toggleDrawer,setOpen}=props
+const {show,toggleDrawere,setShow}=props
   const DrawerList = (
     <Box sx={{ width: 350 }} role="presentation" >
       <div style={{height:"100vh"}} className='position-relative  border '>
@@ -62,8 +62,8 @@ const {open,toggleDrawer,setOpen}=props
     <div>
      
       <Drawer
-        open={open}
-        onClose={() => toggleDrawer(false)}
+        open={show}
+        onClose={() => toggleDrawere(false)}
         anchor="right"  
       >
         {DrawerList}
