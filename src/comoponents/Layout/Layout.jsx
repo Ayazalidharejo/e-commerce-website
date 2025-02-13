@@ -82,26 +82,30 @@ const NavigationBar = () => {
               </button>
             </form>
 
-            <ul className="navbar-nav ms-auto d-flex align-items-center bar">
-           
-              <li className="">
-              <Link className="text-decoration-none  " to="/Signup">  <Icon className="text-secondary"  icon={userIcon} width={20} /> </Link>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#"><Icon icon={heartIcon} width={20} /></a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#"><Icon icon={exchangeAltIcon} width={20} /></a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link d-flex align-items-center" href="#">
-                  <Icon  onClick={ toggleDrawer} icon={shoppingCartIcon} width={20} />
-                  <span className="badge bg-warning ms-1">{items.length}</span>
+            <div className="d-flex align-items-center justify-content-center mt-2  ">
 
-                  <span className="ms-2">${totalPrice}</span>
-                </a>
-              </li>
-            </ul>
+
+           <ul className="navbar-na ms-auto d-flex align-items-center bar list-unstyled">
+           
+           <li className=" ">
+           <Link className="text-decoration-none  " to="/Signup">  <Icon className="text-secondary"  icon={userIcon} width={20} /> </Link>
+           </li>
+           <li className="nav-item mx-2">
+             <a className="nav-link" href="#"><Icon icon={heartIcon} width={20} /></a>
+           </li>
+           <li className="nav-item mx-2">
+             <a className="nav-link" href="#"><Icon icon={exchangeAltIcon} width={20} /></a>
+           </li>
+           <li className="nav-item">
+             <a className="nav-link d-flex align-items-center" href="#">
+               <Icon  onClick={ toggleDrawer} icon={shoppingCartIcon} width={20} />
+               <span className="badge bg-warning ms-1">{items.length}</span>
+
+               <span className="ms-2">${totalPrice}</span>
+             </a>
+           </li>
+         </ul>
+           </div>
             
           </div>
         </div>

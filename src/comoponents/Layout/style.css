@@ -1,3 +1,13 @@
-.bar{
-    display: flex;
-}
+@media (max-width: 576px) {
+    .navbar-nav {
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+    .navbar-nav li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

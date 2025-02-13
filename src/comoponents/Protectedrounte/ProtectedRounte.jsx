@@ -66,14 +66,7 @@ const ProtectedRoute = ({ children }) => {
     return <div>{children}</div>;
   }
 
-  // Handle mismatched data
-  if (loginData.email !== signupData.email) {
-    return <div>Something went wrong: Emails do not match.</div>;
-  }
 
-  if (loginData.password !== signupData.password) {
-    return <h1 className='text-center mt-3'>Something went wrong: Passwords do not match.</h1>;
-  }
 
   // Default fallback
   return <h1 className='text-center mt-3'>Something went wrong, please check your login and signup data.</h1>;

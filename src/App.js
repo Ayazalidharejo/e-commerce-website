@@ -30,7 +30,7 @@ function App() {
       children: [
         {
           path: "",
-          element: <ProtectedRounte> <Mainepage /> </ProtectedRounte>  ,
+          element:  <Mainepage /> ,
         },
        
        
@@ -39,49 +39,49 @@ function App() {
         {
           path: "/About",
       
-          element: <ProtectedRounte> <AboutUs /> </ProtectedRounte>  ,
+          element:  <AboutUs />   ,
         },
         {
           path: "/Contact",
          
-          element: <ProtectedRounte> <ContactForm /> </ProtectedRounte>  ,
+          element:  <ContactForm />   ,
         },
         {
           path: "/ReturnPolicy",
         
-          element: <ProtectedRounte> <ReturnPolicy /> </ProtectedRounte>  ,
+          element:  <ReturnPolicy />   ,
         },
        
         {
           path: "/Kichenmaine",
         
-          element: <ProtectedRounte> <Kichenmaine /> </ProtectedRounte>  ,
+          element:  <Kichenmaine />   ,
         },
         {
           path: "/Tyand_gamesmaine",
         
-          element: <ProtectedRounte> <Tyand_gamesmaine /> </ProtectedRounte>  ,
+          element:  <Tyand_gamesmaine />   ,
         },
        
         {
           path: "/Babyproductmaine",
          
-          element: <ProtectedRounte> <Babyproductmaine /> </ProtectedRounte>  ,
+          element:  <Babyproductmaine />   ,
         },
         {
           path: "/Beautyproductmaine",
          
-          element: <ProtectedRounte> <Beautyproductmaine /> </ProtectedRounte>  ,
+          element:  <Beautyproductmaine /> ,
         },
         {
           path: "/Suplincemaine",
          
-          element: <ProtectedRounte> <Suplincemaine /> </ProtectedRounte>  ,
+          element: <Suplincemaine /> ,
         },
         {
           path: "/OfficeProductmaine",
        
-          element: <ProtectedRounte> <OfficeProductmaine /> </ProtectedRounte>  ,
+          element:  <OfficeProductmaine />  ,
         },
         {
           path: "/Signup",
