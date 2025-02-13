@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <>
       {/* Header Section */}
-      <div className="bg-danger text-white text-center py-5">
+      <div className="bg-warning text-white text-center py-5">
         <h1>Contact Us</h1>
         <p>HOME / Contact US</p>
       </div>
@@ -78,7 +78,7 @@ const ContactForm = () => {
           </div>
 
           {/* Submit Button */}
-          <button type="submit" className="btn btn-primary w-100">
+          <button type="submit" className="btn btn-warning text-white fw-bold w-100">
             Ask a Question
           </button>
         </form>
