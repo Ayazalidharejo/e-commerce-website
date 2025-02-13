@@ -12,6 +12,7 @@ import { Drawer } from "@mui/material";
 import MyDrawer from "../../Sidebar/Drawer";
 import { useSelector } from "react-redux";
 import FilterComponent from "../../FilterComponent";
+import "./style.css"
 
 const NavigationBar = () => {
  
@@ -80,10 +81,9 @@ const NavigationBar = () => {
               <Icon icon="fluent:search-24-regular" />
               </button>
             </form>
-            <ul className="navbar-nav ms-auto d-flex align-items-center">
-            {/* <Link className="text-decoration-none text-black" to="/About">    <li className="mx-3">About US</li> </Link>
-            <Link className="text-decoration-none text-black " to="/Contact">   <li>Contact US</li> </Link>
-            <Link className="text-decoration-none text-black" to="/ReturnPolicy"> <li>Retrurn Policy</li> </Link> */}
+
+            <ul className="navbar-nav ms-auto d-flex align-items-center bar">
+           
               <li className="">
               <Link className="text-decoration-none  " to="/Signup">  <Icon className="text-secondary"  icon={userIcon} width={20} /> </Link>
               </li>
@@ -102,6 +102,7 @@ const NavigationBar = () => {
                 </a>
               </li>
             </ul>
+            
           </div>
         </div>
       </nav>

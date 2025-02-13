@@ -1,9 +1,16 @@
 import React from "react";
 // Import product images
-import one from "../../images/lipstic1.png";
-import two from "../../images/bottle.png";
-import three from "../../images/botle1.png";
-import four from "../../images/brush1.jpg";
+import one from "../../images/home.webp";
+import two from "../../images/home1.avif";
+import three from "../../images/home2.webp";
+import four from "../../images/home3.webp";
+import five from "../../images/home4.avif";
+import six from "../../images/home5.avif";
+import saven from "../../images/home6.webp";
+import eight from "../../images/home7.avif";
+import nine from "../../images/home8.avif";
+import ten from "../../images/home9.png";
+import onee from "../../images/home10.avif";
 
 
 // Products Data
@@ -12,14 +19,14 @@ const products = [
   { name: "Zulay Kitchen Silicone ", price: "$9.99", image: two },
   { name: "Sunnecko Heavy Duty Kitchen ", price: "$19.99", image: three },
   { name: "LekDrok 10 Inch Microwave Food", price: "$9.99", image: four },
-  { name: "Kitchen in the box ", price: "$36.88", image: one, discount: "-8%" },
-  { name: "iBayam Kitchen Shears", price: "$9.99", image: four },
-  { name: "KIMIUP Kitchen Cutting", price: "$12.99", image: one },
-  { name: "Zulay Kitchen Silicone ", price: "$9.99", image: two },
-  { name: "Sunnecko Heavy Duty Kitchen ", price: "$19.99", image: three },
-  { name: "LekDrok 10 Inch Microwave Food", price: "$9.99", image: four },
-  { name: "Kitchen in the box ", price: "$36.88", image: one, discount: "-8%" },
-  { name: "iBayam Kitchen Shears", price: "$9.99", image: four }
+  { name: "Kitchen in the box ", price: "$36.88", image: five, discount: "-8%" },
+  { name: "iBayam Kitchen Shears", price: "$9.99", image: six },
+  { name: "KIMIUP Kitchen Cutting", price: "$12.99", image: saven },
+  { name: "Zulay Kitchen Silicone ", price: "$9.99", image: eight },
+  { name: "Sunnecko Heavy Duty Kitchen ", price: "$19.99", image: nine },
+  { name: "LekDrok 10 Inch Microwave Food", price: "$9.99", image: onee },
+  { name: "Kitchen in the box ", price: "$36.88", image: ten, discount: "-8%" },
+
 ];
 
 const SidebarSection = () => {
@@ -47,12 +54,12 @@ const SidebarSection = () => {
             </li>
             <hr />
             <li className="d-flex align-items-center">
-              <img style={{ width: "100px" }} src={one} alt="" />
+              <img style={{ width: "100px" }} src={three} alt="" />
               Sassy Stacks of Circles Stacking Ring - <span className="text-primary">$10.99</span>
             </li>
             <hr />
             <li className="d-flex align-items-center ">
-              <img style={{ width: "100px" }} src={one} alt="" />
+              <img style={{ width: "100px" }} src={ten} alt="" />
               Sassy Stacks of Circles Stacking Ring - <span className="text-primary">$10.99</span>
             </li>
           </ul>

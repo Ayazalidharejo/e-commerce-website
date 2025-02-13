@@ -1,18 +1,25 @@
 import React from "react";
 import "./Style.css"
-import bootle from "../images/bootlee.png";
+import bootle from "../images/brush1.jpg";
+import bootle1 from "../images/cream001.png";
+import bootle2 from "../images/clear.png";
+import bootle3 from "../images/black.png";
+import bootle4 from "../images/bootlee.png";
+import bootle5 from "../images/hand.png";
+import bootle6 from "../images/lipstic1.png";
+import bootle8 from "../images/clear.png";
+
 
 const categories = [
   { name: "Baby Products", products: 14, image: bootle },
-  { name: "Beauty Products", products: 11, image: bootle },
-  { name: "Grocery & Gourmet", products: 9, image: bootle },
-  { name: "Home & Kitchen", products: 11, image: bootle },
-  { name: "Lawn, Patio & Garden", products: 3, image: bootle },
-  { name: "Office Products", products: 12, image: bootle },
-  { name: "Pet Supplies", products: 12, image: bootle },
-  { name: "Supplements", products: 10, image: bootle },
-  { name: "Tools & and emp", products: 4, image: bootle },
-  { name: "Toys & Games", products: 10, image: bootle },
+  { name: "Beauty Products", products: 11, image: bootle1 },
+  { name: "Grocery & Gourmet", products: 9, image: bootle2 },
+  { name: "Home & Kitchen", products: 11, image: bootle3 },
+  { name: "Lawn, Patio & Garden", products: 3, image: bootle4 },
+  { name: "Office Products", products: 12, image: bootle5 },
+  { name: "Pet Supplies", products: 12, image: bootle6 },
+  { name: "Supplements", products: 10, image: bootle8 },
+ 
 ];
 
 // Array of background colors to cycle through

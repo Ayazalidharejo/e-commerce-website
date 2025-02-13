@@ -1,12 +1,16 @@
 import React, { useState } from "react";
-import babycream from "../images/babycream11.png"
-import bottle from "../images/clear.png"
-import cream from "../images/lipstic1.png"
-import fan from "../images/black.png"
-import botle from "../images/botle.jpg"
-import botle2 from "../images/brush1.jpg"
-import botle3 from "../images/bootlee.png"
-import sampo from "../images/shampo.png"
+import babycream from "../images/b1.webp"
+import bottle from "../images/b10.webp"
+import cream from "../images/babay4.webp"
+import fan from "../images/baby02.webp"
+import botle from "../images/pet.webp"
+import botle2 from "../images/pet5.webp"
+import botle3 from "../images/home.webp"
+import sampo from "../images/home2.webp"
+import sampo1 from "../images/off.jpeg"
+import sampo2 from "../images/off8.avif"
+import sampo3 from "../images/toy.jpg"
+import sampo4 from "../images/toy2.jpg"
 import { useDispatch } from "react-redux";
 import { addProduct } from "../Slice/Addtocart";
 import { ToastContainer, toast } from 'react-toastify';
@@ -35,14 +39,14 @@ const products = [
   { id: 20, name: "Water Bottle", category: "Health & Wellness", price: 9.99, image: cream },
   { id: 21, name: "Dumbbells Set", category: "Health & Wellness", price: 59.99, image: cream },
   { id: 22, name: "Resistance Bands", category: "Health & Wellness", price: 14.99, image: botle },
-  { id: 23, name: "Teddy Bear", category: "Toys & Games", price: 19.99, image: bottle },
+  { id: 23, name: "Teddy Bear", category: "Toys & Games", price: 19.99, image: sampo3 },
   { id: 24, name: "Puzzle Set", category: "Toys & Games", price: 14.99, image: babycream },
-  { id: 25, name: "Board Game", category: "Toys & Games", price: 24.99, image: babycream },
+  { id: 25, name: "Board Game", category: "Toys & Games", price: 24.99, image: sampo2 },
   { id: 26, name: "Remote Control Car", category: "Toys & Games", price: 39.99, image: botle3 },
   { id: 27, name: "Building Blocks", category: "Toys & Games", price: 29.99, image: botle2 },
-  { id: 28, name: "Baby Bottle", category: "Baby Products", price: 9.99, image: cream },
+  { id: 28, name: "Baby Bottle", category: "Baby Products", price: 9.99, image: sampo1 },
   { id: 29, name: "Baby Swaddle Blanket", category: "Baby Products", price: 19.99, image: fan },
-  { id: 30, name: "Baby Teething Toy", category: "Baby Products", price: 7.99, image: fan }
+  { id: 30, name: "Baby Teething Toy", category: "Baby Products", price: 7.99, image: sampo4 }
 ];
 
 const uniqueCategories = ["All", ...new Set(products.map(p => p.category))];
