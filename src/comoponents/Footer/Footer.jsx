@@ -12,7 +12,7 @@ const Footer = () => {
             <p>Business Address: 6841 W Oakton St. | Niles, IL 60714</p>
             <p>Phone Number:  630 547 2064</p>
             <p>Warehouse Addres: 1401 Centre Cir | Downers Grove, IL 60515</p>
-            <p>Email: info@mrbean.com</p>
+            <p>info@nyiy346.com</p>
           </div>
           <div className="col-md-2">
             <h5 className="mb-3">Quick Links</h5>
