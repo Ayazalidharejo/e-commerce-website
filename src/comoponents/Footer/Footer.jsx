@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            {/* <h5 className="mb-3">N-YIYI 346, </h5> */}
-            <img style={{width:"100px"}} src={img} alt="" />
+            <h5 className="mb-3">N-YIYI 346, </h5>
+            {/* <img style={{width:"100px"}} src={img} alt="" /> */}
             <p>Business Address: 6841 W Oakton St. | Niles, IL 60714</p>
             <p>Phone Number:  630 547 2064</p>
             <p>Warehouse Addres: 1401 Centre Cir | Downers Grove, IL 60515</p>

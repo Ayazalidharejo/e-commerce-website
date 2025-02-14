@@ -72,9 +72,9 @@ const SidebarSection = () => {
               <option>Sort by latest</option>
             </select>
           </div>
-          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 mt-3">
+          <div className="row row-cols-3 row-cols-sm-4 row-cols-md-4 row-cols-lg-6 g-3 mt-3">
             {products.map((product, index) => (
-              <div key={index} className="col">
+              <div key={index} className="">
                 <div className="card p-3 shadow-sm border-0 d-flex align-items-center">
                   <img
                     style={{

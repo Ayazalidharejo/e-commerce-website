@@ -1,12 +1,12 @@
 import React from 'react'
-import HomeKitchen from './HomeKichen'
+import HomeKitchen3 from './HomeKichen'
 import SidebarSection from './SidebarSection'
 import Footer from '../Footer/Footer'
 
 const Kichenmaine = () => {
   return (
     <div>
-<HomeKitchen/>
+<HomeKitchen3/>
 <SidebarSection/>
 <Footer/>
 

@@ -7,18 +7,15 @@ import bootle2 from "../images/go11.png";
 import bootle3 from "../images/juice.png";
 import bootle4 from "../images/peen.png";
 import bootle5 from "../images/doog.png";
-import bootle6 from "../images/lipstic1.png";
-import bootle8 from "../images/clear.png";
 
-
+// Categories data
 const categories = [
   { name: "Baby Products", products: 14, image: bootle, link: "/Babyproductmaine" },
   { name: "Beauty Products", products: 11, image: bootle1, link: "/Beautyproductmaine" },
-  { name: "Toy and Games", products: 9, image: bootle2, link: "/Kichenmaine" },
-  { name: "Home & Kitchen", products: 11, image: bootle3, link: "/Tyand_gamesmaine" },
+  { name: "Toy and Games", products: 9, image: bootle2, link: "/Tyand_gamesmaine" },
+  { name: "Home & Kitchen", products: 11, image: bootle3, link: "/Kichenmaine" },
   { name: "Office Products", products: 3, image: bootle4, link: "/OfficeProductmaine" },
   { name: "Pet's Supplies", products: 12, image: bootle5, link: "/Suplincemaine" },
-
 ];
 
 const CategorySection = () => {

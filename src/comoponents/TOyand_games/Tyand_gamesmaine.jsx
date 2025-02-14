@@ -1,12 +1,12 @@
 import React from 'react'
-import HomeKitchen from './HomeSection'
+import HomeKitchen6 from './HomeSection'
 import SidebarSection from './Sidebar'
 import Footer from '../Footer/Footer'
 
 const Tyand_gamesmaine = () => {
   return (
     <div>
-      <HomeKitchen/>
+      <HomeKitchen6/>
       <SidebarSection/>
       <Footer/>
     </div>

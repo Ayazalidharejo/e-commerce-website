@@ -12,7 +12,7 @@ const categories = [
   { name: "Pet Supplies", products: 12, link: "/Suplincemaine" },
 ];
 
-const HomeKitchen = () => {
+const HomeKitchen3 = () => {
   return (
     <div className="bg-warning text-white py-5 text-center">
       <div className="container">
@@ -38,4 +38,4 @@ const HomeKitchen = () => {
   );
 };
 
-export default HomeKitchen;
+export default HomeKitchen3;

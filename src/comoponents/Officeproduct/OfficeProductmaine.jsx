@@ -1,12 +1,12 @@
 import React from 'react'
-import HomeKitchen from './HeroSection'
+import HomeKitchen4 from './HeroSection'
 import SidebarSection from './Sidebarsection'
 import Footer from '../Footer/Footer'
 
 const OfficeProductmaine = () => {
   return (
     <div>
-       <HomeKitchen/> 
+       <HomeKitchen4/> 
        <SidebarSection/> 
        <Footer/> 
     </div>

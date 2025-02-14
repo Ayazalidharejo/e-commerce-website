@@ -1,12 +1,12 @@
 import React from 'react'
-import HomeKitchen from './HeroSection'
+import HomeKitchen1 from './HeroSection'
 import SidebarSection from './Sidebarsection'
 import Footer from '../Footer/Footer'
 
 const Babyproductmaine = () => {
   return (
     <div>
-    <HomeKitchen/>
+    <HomeKitchen1/>
     <SidebarSection/>
     <Footer/>
     </div>

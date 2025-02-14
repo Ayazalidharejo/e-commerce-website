@@ -20,6 +20,12 @@ import OfficeProductmaine from "./comoponents/Officeproduct/OfficeProductmaine";
 import ProtectedRounte from "./comoponents/Protectedrounte/ProtectedRounte"
 import Signup from "./comoponents/Outh/Signup";
 import Login from "./comoponents/Outh/Login";
+import HomeKitchen1 from "./comoponents/Babyproduct/HeroSection";
+import HomeKitchen2 from "./comoponents/Beautyproduct/HeroSection";
+import HomeKitchen3 from "./comoponents/Homekichen/HomeKichen";
+import HomeKitchen4 from "./comoponents/Officeproduct/HeroSection";
+import HomeKitchen5 from "./comoponents/Suplince/HeroSection";
+import HomeKitchen6 from "./comoponents/TOyand_games/HomeSection";
 
 function App() {
   const router = createBrowserRouter([
@@ -91,6 +97,7 @@ function App() {
           path: "/Login",
           element: <Login />,
         },
+        
        
       ],
     },

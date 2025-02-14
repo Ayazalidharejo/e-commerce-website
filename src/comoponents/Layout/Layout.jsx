@@ -313,7 +313,7 @@ import heartIcon from '@iconify-icons/fa-solid/heart';
 import exchangeAltIcon from '@iconify-icons/fa-solid/exchange-alt';
 import shoppingCartIcon from '@iconify-icons/fa-solid/shopping-cart';
 import { Link, Outlet } from "react-router-dom";
-import image from "../../images/again.png";
+import image from "../../images/freee.png";
 import { Badge, Drawer } from "@mui/material";
 import { useSelector } from "react-redux";
 import "./style.css";
@@ -423,18 +423,27 @@ const NavigationBar = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div className="container">
           <div className="d-flex">
-            <Link className="text-decoration-none" to="">
+               <button className="navbar-toggler" type="button" onClick={() => toggleDrawer(true)}>
+            <span className="navbar-toggler-icon"></span>
+          </button> 
+            {/* <Link className="text-decoration-none" to="">
+              <img style={{ width: "100px", height: "70px" }} src={image} alt="Logo" />
+              
+             
+
+            </Link> */}
+            <input className="form-control me-2 w-100 ms-1 d-block d-sm-none" type="search" placeholder="Search for products" aria-label="Search" />
+          
+
+          {/* <button className="navbar-toggler" type="button" onClick={() => toggleDrawer(true)}>
+            <span className="navbar-toggler-icon"></span>
+          </button> */}
+           <Link className="text-decoration-none" to="">
               <img style={{ width: "100px", height: "70px" }} src={image} alt="Logo" />
               {/* <span className="fw-bold mx-1 text-black">N-YIYI 346,LLC</span> */}
              
 
             </Link>
-            <input className="form-control me-2 w-100 ms-1 d-block d-sm-none" type="search" placeholder="Search for products" aria-label="Search" />
-          
-
-          <button className="navbar-toggler" type="button" onClick={() => toggleDrawer(true)}>
-            <span className="navbar-toggler-icon"></span>
-          </button>
           </div>
           <div className="collapse navbar-collapse">
             {/* Desktop Search and Category Dropdown (Hidden on Mobile) */}

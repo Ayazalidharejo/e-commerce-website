@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../images/dogfood.png"
+import { Link } from "react-router-dom";
 
 
 const FoodSection = () => {
@@ -12,7 +13,7 @@ const FoodSection = () => {
         <div className="col-md-6 text-center text-md-start">
           <p className="small">Pet Supplies</p>
           <h2 className="fw-bold">Shop Pet Food and Items Now !</h2>
-          <button className="btn btn-primary mt-3">BUY NOW</button>
+         <Link to="/Suplincemaine">  <button className="btn btn-primary mt-3">BUY NOW</button> </Link>
         </div>
         <div className="col-md-6 text-center">
           <img src={image} alt="Pet Food" className="img-fluid" />
