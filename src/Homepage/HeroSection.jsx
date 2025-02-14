@@ -37,7 +37,7 @@ const Banner = () => {
                 href="https://dhircrickllc.com/"
                 className="link-light d-block mb-3 text-center w-100"
               >
-                https://dhircrickllc.com/
+                {/* https://dhircrickllc.com/ */}
               </a>
             </div>
 
@@ -69,7 +69,7 @@ const Banner = () => {
                 href="https://dhircrickllc.com/"
                 className="link-light d-block mb-3 text-center w-100"
               >
-                https://dhircrickllc.com/
+                {/* https://dhircrickllc.com/ */}
               </a>
             </div>
 

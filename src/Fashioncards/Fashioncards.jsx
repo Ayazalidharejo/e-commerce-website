@@ -45,7 +45,7 @@ const Fashioncards = () => {
         {categories.map((category, index) => (
           <div className="col-6 col-sm-4 col-md-3 mb-4" key={index}>
             <div className="category-card">
-              <img src={category.image} alt={category.title} className="img-fluid" />
+              <img style={{maxHeight:"200px",minHeight:"200px"}} src={category.image} alt={category.title} className="img-fluid" />
               <div className="overlay">
                 <h4>{category.title}</h4>
                 {category.subtitle && <p>{category.subtitle}</p>}
