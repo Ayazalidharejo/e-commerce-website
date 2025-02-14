@@ -130,6 +130,7 @@ import { Autoplay } from "swiper/modules";
 import "./Hero.css"; // Assuming you are importing your custom styles
 import hero from "../images/than.png";
 import hero2 from "../images/kk.png";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -152,17 +153,18 @@ const Banner = () => {
                   <h1 className="fw-bold text-center heading">Discover The New Items!</h1>
                   <div className="row d-flex align-items-center justify-content-center">
                     <div className="col-6">
-                      <p className="mb-3 text-center fs-5 ps-5 mb-5 pt-4 para">
+                      <p className="mb- text-center fs-5 ps-5 mb- pt-4 para">
                         Discover quality items at <strong>N-YIYI 346</strong>, your go-to store for all needs.
-                      </p>
-                      <a href="#" className="link-light d-block text-center w-100 ps-5 mt-5">
+                        <a href="#" className="link-light d-block text-center w-100 ps- mt-">
                         info@nyiy346.com
                       </a>
+                      </p>
+                     
                     </div>
-                    <div className="col-6">
+                    <div className="col-5 mt-5">
                       <div className="price-box d-flex flex-column bg-white p-3 text-black rounded-2 w-75 text-center btn1">
                         <h2 className="price fs-1 fw-bold">6.99$</h2>
-                        <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button>
+                        <Link to="/Kichenmaine">   <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button> </Link>
                       </div>
                     </div>
                   </div>
@@ -184,17 +186,18 @@ const Banner = () => {
                   <h2 className="fw-bold text-center heading">Special Deals Just For You!</h2>
                   <div className="row d-flex align-items-center">
                     <div className="col-6">
-                      <p className="mb-3 text-center fs-5 ps-5 mb-5 pt-4">
+                      <p className=" text-center fs-5 ps-5 ">
                         Get the best deals on high-quality products now at <strong>N-YIYI 346</strong>.
-                      </p>
-                      <a href="#" className="link-light d-block text-center w-100 ps-5 mt-5">
+                        <a href="#" className="link-light d-block text-center w-100 ps- mt-">
                         info@nyiy346.com
                       </a>
+                      </p>
+                      
                     </div>
-                    <div className="col-6">
+                    <div className="col-5 mt-3">
                       <div className="price-box d-flex flex-column bg-white p-3 text-black rounded-2 w-75 text-center">
                         <h2 className="price fs-1 fw-bold">10.99$</h2>
-                        <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button>
+                      <Link to="/Kichenmaine">   <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button> </Link>
                       </div>
                     </div>
                   </div>
@@ -233,17 +236,17 @@ const Banner = () => {
                   <h2 className="fw-bold text-center heading py-3">Discover The <br /> New Items!</h2>
                   <div className="row d-flex align-items-center">
                     <div className="col-6">
-                      <p className="mb-3 text-center  para ms-1 ">
-                        Get the best deals on high-quality products now at <strong>N-YIYI 346</strong>.
-                      </p>
-                      <a href="#" className="link-light d-block text-center w-100 ps-5 ">
+                      <p className=" text-center  para ms-1 ">
+                        Get the best deals on high-quality products now at <strong>N-YIYI 346</strong>. <br />
                         info@nyiy346.com
-                      </a>
+                     
+                      </p>
+                     
                     </div>
                     <div className="col-5">
-                      <div className="price-box d-flex flex-column bg-white p-3 text-black rounded-2  text-center">
+                      <div className="price-box d-flex flex-column bg-white p-3 text-black rounded-2  text-center mt-5">
                         <h2 className="price fs-6 fw-bold">10.99$</h2>
-                        <button className="btn btn-dark  py-2 text-center shopbtn  ">Shop Now</button>
+                        <Link to="/Kichenmaine">   <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button> </Link>
                       </div>
                     </div>
                     <img style={{height:"200px",width:"400px"}} className="p-2" src={hero2} alt="" />
@@ -262,17 +265,20 @@ const Banner = () => {
                   <h2 className="fw-bold text-center heading py-3">Discover The <br /> New Items!</h2>
                   <div className="row d-flex align-items-center">
                     <div className="col-6">
-                      <p className="mb-3 text-center  para ms-1 ">
-                        Get the best deals on high-quality products now at <strong>N-YIYI 346</strong>.
-                      </p>
-                      <a href="#" className="link-light d-block text-center w-100 ps-5 ">
+                      <p className=" text-center  para ms-1 ">
+                        Get the best deals on high-quality products now at <strong>N-YIYI 346 <br />
+                    
                         info@nyiy346.com
-                      </a>
+                     
+                        </strong>.
+                        
+                      </p>
+                     
                     </div>
-                    <div className="col-5">
+                    <div className="col-5 ">
                       <div className="price-box d-flex flex-column bg-white p-3 text-black rounded-2  text-center">
                         <h2 className="price fs-6 fw-bold">10.99$</h2>
-                        <button className="btn btn-dark  py-2 text-center shopbtn  ">Shop Now</button>
+                        <Link to="/Kichenmaine">   <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button> </Link>
                       </div>
                     </div>
                     <img style={{height:"200px",width:"400px"}} className="p-2" src={hero} alt="" />
