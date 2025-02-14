@@ -228,10 +228,10 @@ const Banner = () => {
           modules={[Autoplay]}
         >
           {/* Slide 1 for small screens */}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="container-fluid banner">
               <div className="row align-items-center" style={{ minHeight: '300px' }}>
-                {/* Left Content */}
+               
                 <div className="col-lg-6 col-md-6 col-sm-12 text-white text-section d-flex align-items-center flex-column">
                   <h2 className="fw-bold text-center heading py-3">Discover The <br /> New Items!</h2>
                   <div className="row d-flex align-items-center">
@@ -243,7 +243,7 @@ const Banner = () => {
                       </p>
                      
                     </div>
-                    <div className="col-5">
+                    <div className="col-6">
                       <div className="price-box d-flex flex-column bg-white p-3 text-black rounded-2  text-center mt-5">
                         <h2 className="price fs-6 fw-bold">10.99$</h2>
                         <Link to="/Kichenmaine">   <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button> </Link>
@@ -254,10 +254,8 @@ const Banner = () => {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
-
-          {/* Slide 2 for small screens */}
-          <SwiperSlide>
+          </SwiperSlide> */}
+           <SwiperSlide>
             <div className="container-fluid banner">
               <div className="row align-items-center" style={{ minHeight: '300px' }}>
                 {/* Left Content */}
@@ -277,11 +275,45 @@ const Banner = () => {
                     </div>
                     <div className="col-5 ">
                       <div className="price-box d-flex flex-column bg-white p-3 text-black rounded-2  text-center">
-                        <h2 className="price fs-6 fw-bold">10.99$</h2>
+                        <h2 className="price fs-6 fw-bold ps-2">10.99$</h2>
                         <Link to="/Kichenmaine">   <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button> </Link>
                       </div>
                     </div>
                     <img style={{height:"200px",width:"400px"}} className="p-2" src={hero} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          {/* Slide 2 for small screens */}
+          <SwiperSlide>
+            <div className="container-fluid banner">
+              <div className="row align-items-center" style={{ minHeight: '300px' }}>
+                {/* Left Content */}
+                <div className="col-lg-6 col-md-6 col-sm-12 text-white text-section d-flex align-items-center flex-column">
+                  <h2 className="fw-bold text-center heading py-3">Discover The <br /> New Items!
+                  
+                  </h2>
+                  <div className="row d-flex align-items-center">
+                    <div className="col-6">
+                      <p className=" text-center  para ms-1 ">
+                        Get the best deals on high-quality products now at <strong>N-YIYI 346 <br />
+                    
+                        info@nyiy346.com
+                     
+                        </strong>.
+                        
+                      </p>
+                     
+                    </div>
+                    <div className="col-5 ">
+                      <div className="price-box d-flex flex-column bg-white p-3 text-black rounded-2  text-center">
+                        <h2 className="price fs-6 fw-bold ps-2">6.99$</h2>
+                        <Link to="/Kichenmaine">   <button className="btn btn-dark w-75 py-2 text-center ms-4">Shop Now</button> </Link>
+                      </div>
+                    </div>
+                    <img style={{height:"200px",width:"400px"}} className="p-2" src={hero2} alt="" />
                   </div>
                 </div>
               </div>
