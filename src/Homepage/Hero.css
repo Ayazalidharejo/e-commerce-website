@@ -1,7 +1,7 @@
 
 .banner {
 
-    background: linear-gradient(90deg, #0056b3, #007bff);
+    background: linear-gradient(90deg, #9b1289, #12469b);
     padding: 50px 20px;
     color: white;
     min-height: 400px;
@@ -16,7 +16,7 @@ width: 500px;
 
   @media (max-width: 768px) {
     .banner {
-      background: linear-gradient(90deg, #0056b3, #007bff);
+      background: linear-gradient(90deg, #0056b3, #ad1ca1);
       padding: 50px 20px;
       padding: 0;
     }
@@ -43,4 +43,24 @@ width: 500px;
     .btn-dark {
       padding: 10px 20px;
     }
+    
+    
   }  
+  .heading{
+    font-size: 80px;
+    text-align: start;
+  }
+
+
+   @media (max-width: 480px) {
+    .heading{
+      font-size: 40px;
+      text-align: start;
+    }
+    .para{
+font-size: 12px !important;
+    }
+    .shopbtn{
+      font-size: 10px;
+    }
+  } 
