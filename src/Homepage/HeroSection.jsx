@@ -128,7 +128,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import "./Hero.css"; // Assuming you are importing your custom styles
-import hero from "../images/dogfood.png";
+import hero from "../images/than.png";
 import hero2 from "../images/kk.png";
 
 const Banner = () => {
@@ -169,7 +169,7 @@ const Banner = () => {
                 </div>
                 {/* Right Image */}
                 <div className="col-lg-6 col-md-6 col-sm-12 text-center">
-                  <img src={hero2} alt="Special Offer" className="img-fluid product-image" />
+                  <img style={{height:"500px",width:"650px"}} src={hero} alt="Special Offer" className=" product-image" />
                 </div>
               </div>
             </div>
@@ -275,7 +275,7 @@ const Banner = () => {
                         <button className="btn btn-dark  py-2 text-center shopbtn  ">Shop Now</button>
                       </div>
                     </div>
-                    <img style={{height:"200px",width:"400px"}} className="p-2" src={hero2} alt="" />
+                    <img style={{height:"200px",width:"400px"}} className="p-2" src={hero} alt="" />
                   </div>
                 </div>
               </div>
