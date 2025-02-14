@@ -37,7 +37,7 @@ const AboutUs = () => {
             </p>
             <p>
               For inquiries or assistance, feel free to contact us at
-              <a href="mailto:info@dhircrickllc.com"> info@dhircrickllc.com</a>.
+              <a href="mailto:mr bean@gmail.com"> info@dhircrickllc.com</a>.
             </p>
           </div>
         </div>

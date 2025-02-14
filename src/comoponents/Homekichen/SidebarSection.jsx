@@ -72,7 +72,7 @@ const SidebarSection = () => {
               <option>Sort by latest</option>
             </select>
           </div>
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 mt-3">
+          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 mt-3">
             {products.map((product, index) => (
               <div key={index} className="col">
                 <div className="card p-3 shadow-sm border-0 d-flex align-items-center">
@@ -90,10 +90,11 @@ const SidebarSection = () => {
                   {product.discount && (
                     <span className="badge bg-primary position-absolute">{product.discount}</span>
                   )}
-                 <Tooltip title={product.name}>
-                               <h6 className="mt-2">{product.name.length > 10 ? `${product.name.slice(0, 10)}...` : product.name}</h6>
-               
-               </Tooltip>
+                  <Tooltip title={product.name}>
+                    <h6 className="mt-2">
+                      {product.name.length > 10 ? `${product.name.slice(0, 10)}...` : product.name}
+                    </h6>
+                  </Tooltip>
                   <p className="fw-bold text-primary">{product.price}</p>
                 </div>
               </div>

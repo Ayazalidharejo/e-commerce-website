@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <h5 className="mb-3">N-YIYI 346, LLC</h5>
+            <h5 className="mb-3">N-YIYI 346, </h5>
             <p>Business Address: 6841 W Oakton St. | Niles, IL 60714</p>
             <p>Phone Number:  630 547 2064</p>
             <p>Warehouse Addres: 1401 Centre Cir | Downers Grove, IL 60515</p>
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         <hr className="bg-light" />
         <div className="d-flex justify-content-between align-items-center">
-          <p className="mb-0">&copy; N-YIYI 346, LLC 2025 All Rights Reserved.</p>
+          <p className="mb-0">&copy; N-YIYI 346,  2025 All Rights Reserved.</p>
           <div>
             <img src={ft} alt="Visa" width="240" className="me-2" />
             {/* <img src="mastercard.png" alt="Mastercard" width="40" className="me-2" />

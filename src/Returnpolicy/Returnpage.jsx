@@ -25,7 +25,7 @@ const ReturnPolicy = () => {
         </ul>
         <h2>How to Return an Item</h2>
         <ol>
-          <li>Contact our customer service team at <a href="mailto:info@dhircrickllc.com">info@dhircrickllc.com</a> to initiate a return.</li>
+          <li>Contact our customer service team at <a href="mailto:mr bean@gmail.com">info@dhircrickllc.com</a> to initiate a return.</li>
           <li>Include your order number, the item(s) you wish to return, and the reason for the return.</li>
           <li>We will provide you with a return authorization and instructions on how to send the item back to us.</li>
         </ol>

@@ -313,8 +313,8 @@ import heartIcon from '@iconify-icons/fa-solid/heart';
 import exchangeAltIcon from '@iconify-icons/fa-solid/exchange-alt';
 import shoppingCartIcon from '@iconify-icons/fa-solid/shopping-cart';
 import { Link, Outlet } from "react-router-dom";
-import image from "../../images/logo.png";
-import { Drawer } from "@mui/material";
+import image from "../../images/again.png";
+import { Badge, Drawer } from "@mui/material";
 import { useSelector } from "react-redux";
 import "./style.css";
 import MyDrawer from "../../Sidebar/Drawer";
@@ -350,8 +350,8 @@ const NavigationBar = () => {
           {/* Logo and Home Link */}
           <div className="d-flex align-items-center mb-3">
             <Link className="text-decoration-none" to="">
-              <img style={{ width: "70px", height: "50px" }} src={image} alt="Dhir Crick" />
-              <span className="fw-bold text-black">N-YIYI 346,LLC</span>
+              <img className="border" style={{ width: "150px", height: "120px" }} src={image} alt="Dhir Crick" />
+              {/* <span className="fw-bold text-black">N-YIYI 346,LLC</span> */}
             </Link>
            
           </div>
@@ -364,7 +364,9 @@ const NavigationBar = () => {
               <li className="nav-item">
                 <a href="#" className="d-flex align-items-center">
                   <Icon  className="text-black" onClick={toggleDrawere} icon={shoppingCartIcon} width={20} />
-                  <span className="badge bg-warning ms-1">{items.length}</span>
+                  <Badge className="mx-1" badgeContent={items.length} color="success">
+                  <Icon  className="text-black" onClick={toggleDrawere} icon={shoppingCartIcon} width={20} />
+</Badge>
                   <span className="ms-2 text-black">${totalPrice}</span>
                 </a>
               </li>
@@ -402,11 +404,11 @@ const NavigationBar = () => {
       <div className="bg-warning text-white text-center py-2">
         <div className="container">
           <div className="d-flex justify-content-between">
-          <div className="d-none d-md-block">
+          <div className="text-center ps-4">
   <small>GET FREE DELIVERY OVER THE ORDER OF $99</small>
 </div>
 
-            <div  className="menue">
+            <div  className="menue d-none d-md-block">
               <ul className="d-flex list-unstyled">
                 <Link className="text-decoration-none text-white" to="/Contact"><li>Contact US</li></Link>
                 <Link className="text-decoration-none text-white" to="/About"><li className="mx-3">About US</li></Link>
@@ -420,17 +422,20 @@ const NavigationBar = () => {
       {/* Desktop Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div className="container">
-          <div>
+          <div className="d-flex">
             <Link className="text-decoration-none" to="">
-              <img style={{ width: "70px", height: "50px" }} src={image} alt="Logo" />
-              <span className="fw-bold mx-1 text-black">N-YIYI 346,LLC</span>
+              <img style={{ width: "100px", height: "70px" }} src={image} alt="Logo" />
+              {/* <span className="fw-bold mx-1 text-black">N-YIYI 346,LLC</span> */}
+             
+
             </Link>
-          </div>
+            <input className="form-control me-2 w-100 ms-1 d-block d-sm-none" type="search" placeholder="Search for products" aria-label="Search" />
+          
 
           <button className="navbar-toggler" type="button" onClick={() => toggleDrawer(true)}>
             <span className="navbar-toggler-icon"></span>
           </button>
-
+          </div>
           <div className="collapse navbar-collapse">
             {/* Desktop Search and Category Dropdown (Hidden on Mobile) */}
             <div className="d-none d-md-flex search-category align-items-center ms-aut w-100 ">
@@ -456,8 +461,11 @@ const NavigationBar = () => {
               <li className="nav-item mx-2"><a href="#"><Icon  className="text-black" icon={exchangeAltIcon} width={20} /></a></li>
               <li className="nav-item">
                 <a href="#" className="d-flex align-items-center">
+                
+                  <Badge className="mx-1" badgeContent={items.length} color="success">
                   <Icon  className="text-black" onClick={toggleDrawere} icon={shoppingCartIcon} width={20} />
-                  <span className="badge bg-warning ms-1">{items.length}</span>
+</Badge>
+                  {/* <span className="badge bg-warning ms-1">{items.length}</span> */}
                   <span className="ms-2 text-black">${totalPrice}</span>
                 </a>
               </li>

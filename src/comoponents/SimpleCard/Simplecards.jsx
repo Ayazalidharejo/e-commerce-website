@@ -35,7 +35,7 @@ const ProductShowcase = () => {
             >
               <div className="text-light">
                 <h3 className="fw-bold">{product.title}</h3>
-                <p className="text-dark">{product.description}</p>
+                <p className="text-black fw-bold">{product.description}</p>
                 <h4 className="fw-bold">ONLY FOR <span className="text-dark">{product.price}</span></h4>
                 <button className="btn btn-dark mt-2">SHOP NOW!</button>
               </div>

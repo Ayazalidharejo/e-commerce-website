@@ -1,15 +1,39 @@
 
 
-  
+   
   .category-img {
-    width: 100px; /* Set a fixed width for images */
-    height: 100px; /* Set a fixed height for images */
-    object-fit: cover; /* Ensure the image doesn't stretch but fills the container */
-    border-radius: 50%; /* If you want round images */
+    width: 100px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
   }
   
   .cards {
-    border-radius: 50%; /* Apply border radius for the card */
+    border-radius: 50%; 
     overflow: hidden;
   }
-  
+  .category-card-1 {
+    background-color: #f984ad; /* Red */
+  }
+  .category-card-2 {
+    background-color: #e33b37; /* Red */
+  }
+  .category-card-3 {
+    background-color: #41edab; /* Red */
+  }
+
+  .category-card-4 {
+    background-color: #e79a2d; /* Red */
+  }
+  .category-card-5 {
+    background-color: #5579c9; /* Red */
+  }
+  .category-card-6 {
+    background-color: #075535; /* Red */
+  }
+  .category-card-7 {
+    background-color: #279ed9; /* Red */
+  }
+  .category-card-8 {
+    background-color: #b87552; /* Red */
+  }
